@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the official Marketplace of Thetan Arena - 1st MOBA NFT game. Pick your favorite Thetan Hero &amp; Open Thetan box including various Heroes to start the battles in our Esport game based on blockchain technology."/>
+    <meta name="keywords" content="Thetan Arena, Thetan Arena Marketplace, Thetan Arena NFT, Thetan Arena NFT Marketplace, Thetan Arena NFT Game, Thetan Arena NFT Game Marketplace, NFT, Arena, Thetan, Marketplace"/>
+    <meta name="author" content="Thetan Arena" />
+    <meta property="og:title" content="Thetan Arena Marketplace" />
+    <meta property="og:description" content="This is the official Marketplace of Thetan Arena - 1st MOBA NFT game. Pick your favorite Thetan Hero &amp; Open Thetan box including various Heroes to start the battles in our Esport game based on blockchain technology."/>
+    <meta property="og:image" content="https://thetanarena.netlify.app/images/favicon.png"/>
+    <meta property="og:url" content="https://thetanarena.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Thetan Arena Marketplace" />
+    <title>Instituto de Dados</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+	 <link rel="stylesheet" href="css/style-navegacao.css">
+  </head>
+  <body class="h-full bg-[#0f0933] text-white scrollbar-hide">
+    <!-- Navbar -->
+    <nav
+      class="flex items-center justify-between w-full bg-[#020205] shadow-[0_16px_24px_#00000026] z-50 fixed h-[68px] laptop-l:h-[52px] laptop:h-[60px] top-0 right-0 font-medium"
+    >
+      <div class="flex items-center h-full">
+        <a
+          href="index.html"
+          class="bg-[url('images/logo-bg.png')] bg-[#5333ff] w-[104px] clip-path h-full bg-no-repeat bg-cover flex items-center justify-center pr-[10px] mr-[-12.8px] laptop-l:w-[80px]"
+        >
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="w-[52px] h-full object-contain laptop-l:w-[40px]"
+          />
+        </a>
+        <ul
+          class="flex items-center capitalize text-[#c9c5db] h-full laptop:hidden"
+        >
+          <li class="h-full -mr-4">
+            <a
+              href="#about2"
+              class="flex items-center justify-center h-full bg-blue menu-clip-path px-[40px] border-b-4 border-[#47a6ff] text-base laptop-l:text-xs laptop:text-sm"
+              >Quem Somos</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#equipe"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >O que fazemos</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >Portfólio</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#cases"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >Cases</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >Trabalhe com a gente</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >Contato</a
+            >
+          </li>
+         
+          <li class="relative h-full -mr-4" id="dropdown">
+            <span
+              onclick="dropdown();"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm gap-2 cursor-pointer capitalize"
+              >Mais
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 0 24 24"
+                width="20px"
+                class="fill-current"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                <path d="M7 10l5 5 5-5z"></path>
+              </svg>
+            </span>
+            <div
+              class="invisible transition-all duration-300 origin-top-right transform scale-95 -translate-y-2 opacity-0 dropdown-menu"
+            >
+              <div
+                class="absolute w-72 mt-2 origin-top-right translate-x-1/2 border border-[#ffffff1a] rounded-md right-2/4 bg-[#000022b3] p-2 laptop-l:w-56 backdrop-blur-[100px] text-[#c9c5db]"
+              >
+                <span
+                  class="flex items-center gap-2 p-2 hover:bg-[#00baff26] transition-colors rounded-md cursor-pointer laptop-l:text-xs laptop:text-sm"
+                >
+                  <img
+                    src="images/menu-1.svg"
+                    alt="menu"
+                    class="laptop-l:w-[30px]"
+                  />
+                 Projetos de pesquisa
+                </span>
+                <span
+                  class="flex items-center gap-2 p-2 hover:bg-[#00baff26] transition-colors rounded-md cursor-pointer laptop-l:text-xs laptop:text-sm"
+                >
+                  <img
+                    src="images/menu-2.svg"
+                    alt="menu"
+                    class="laptop-l:w-[30px]"
+                  />
+                  LGPD
+                </span>
+                <span
+                  class="flex items-center gap-2 p-2 hover:bg-[#00baff26] transition-colors rounded-md cursor-pointer laptop-l:text-xs laptop:text-sm"
+                >
+                  <img
+                    src="images/menu-3.svg"
+                    alt="menu"
+                    class="laptop-l:w-[30px]"
+                  />
+                  SOLUÇÕES
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center justify-center gap-3 pr-6">
+        <button
+          class="bg-[#2390ff] px-3 py-2 capitalize text-white rounded-md laptop-l:text-xs laptop:text-sm"
+        >
+         CASES
+        </button>
+        <button
+          class="justify-end hidden cursor-pointer laptop:inline-flex"
+          onclick="mobilenav();"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 0 24 24"
+            width="30px"
+            class="transition duration-500 fill-white hover:fill-blue-400"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobilenav"
+      class="bg-[#261858] pt-[60px] fixed top-0 right-0 z-[45] w-[290px] h-screen overflow-auto translate-x-full transition scrollbar-hide mobile-s:w-[280px]"
+    >
+      <ul
+        id="more"
+        class="flex-col items-center capitalize text-[#c9c5db] h-full hidden"
+      >
+        <li class="w-full pt-5">
+          <span
+            onclick="backmore();"
+            class="flex gap-3 w-full px-8 py-3 text-white border-b border-b-[#2a1d9140] cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              class="fill-current rotate-[90deg]"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none"></path>
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+            More
+          </span>
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >Conversion program</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >vesting safe</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >Creator corner</a
+          >
+        </li>
+      </ul>
+      <ul
+        id="menu"
+        class="flex flex-col items-center capitalize text-[#c9c5db] h-full"
+      >
+        <li class="w-full pt-5">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-white border-l-4 border-l-[#7b61ff] border-y border-y-[#2a1d9140]"
+            >dashboard</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >ThetanBox</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >buy</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >rent</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >special event</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >staking</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >daily quest</a
+          >
+        </li>
+        <li class="w-full">
+          <span
+            onclick="more();"
+            class="flex justify-between w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140] cursor-pointer"
+            >More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              class="fill-current rotate-[270deg]"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none"></path>
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Backdrop Filter -->
+    <div
+      id="bgFilter"
+      class="bg-[#130b21d9] w-screen h-screen z-40 fixed backdrop-blur-[32px] opacity-0 invisible transition-opacity">
+    </div>
+
+    <!-- Main -->
+    <div class="mt-[68px] laptop-l:mt-[52px] laptop:mt-[60px]">
+      <!-- Swiper -->
+      <div class="text-base laptop-xl:text-xs laptop:text-base">
+        <div class="swiper mainSlider h-[25em] laptop:h-auto laptop:aspect-[768/220]">
+          <div class="swiper-wrapper">
+            <div class="pointer-events-none swiper-slide">
+              <img class="object-cover w-full h-full" src="images/banner/institute-dados-3.jpeg" alt="Banner-HeroTrading">
+            </div>
+            <div class="pointer-events-none swiper-slide">
+              <img class="object-cover w-full h-full" src="images/footer/gif-dados.gif" alt="Banner_MKPQuest">
+            </div>
+            <div class="pointer-events-none swiper-slide">
+              <img class="object-cover w-full h-full" src="images/banner/institute-dados-3.jpeg" alt="Banner-WelcomGiftBox">
+            </div>
+          </div>
+          <div class="flex items-center justify-center w-full laptop:text-[8px] tablet:text-[6px]">
+              <div class="!left-auto !w-auto swiper-pagination bg-[#00000080] flex p-[.625em] rounded-[.5em] !bottom-[1em]"></div>
+          </div>
+          <div class="right-0 w-auto text-white swiper-button-next laptop:text-xs tablet:text-[10px] flex transition-colors mobile-xl:hidden"></div>
+          <div class="left-0 w-auto text-white swiper-button-prev laptop:text-xs tablet:text-[10px] flex transition-colors mobile-xl:hidden"></div>
+        </div>
+      </div>
+
+     
+
+       
+
+
+	 
+         
+			
+         
+		 
+		  <section class="about2" id="about2">
+     
+	  <div class="flex flex-col items-center pb-[180px] laptop-l:pb-[135px] laptop:pb-[54px] tablet:pb-14">
+        <div class="w-[1440px] px-[51px] mobile-xl:px-6 laptop-xl:w-[1024px] laptop:w-[780px] tablet:w-[500px] mobile-xl:w-full">
+         
+		  
+		  
+		   <div class="flex flex-col recenctly">
+            <h2 class="text-[28px] font-semibold tablet:text-2xl mobile-xl:text-xl">Quem Somos</h2>
+	 
+   
+
+    <div class="row">
+
+       
+
+        <div class="content">
+           
+            <p>O Instituto de dados é uma Instituição de Ciência e Tecnologia (ICT), estruturada na forma de uma Associação Civil de Direito Privado, sem fins lucrativos, voltada para a promoção da Inovação através da Pesquisa e Desenvolvimento em TIC.Fundado pelo CPqD e PADTEC, o Instituto de dados é um dos principais ICTs do Nordeste em Pesquisa, Desenvolvimento e Inovação. Com +700 profissionais talentosos e certificados em suas áreas de especialidades, estão distribuídos no escritório em Fortaleza. O Instituto de Dados possui um ambiente de trabalho harmonioso e colaborativo, com liberdade de experimentação e maior proximidade com o cliente. </p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+		
+		 <div class="image">
+            <img src="images/footer/gif-dados2.gif" alt="">
+        </div>
+
+    </div>
+	
+	 </div>
+
+    </div>
+	 </div>
+
+    
+
+</section>
+
+  <section class="about2" id="equipe">
+
+<div class="flex flex-col items-center pb-[180px] laptop-l:pb-[135px] laptop:pb-[54px] tablet:pb-14">
+        <div class="w-[1440px] px-[51px] mobile-xl:px-6 laptop-xl:w-[1024px] laptop:w-[780px] tablet:w-[500px] mobile-xl:w-full">
+         
+		  
+		  
+		   <div class="flex flex-col recenctly">
+            <h2 class="text-[28px] font-semibold tablet:text-2xl mobile-xl:text-xl">Quem Somos</h2>
+            <div class="flex w-full gap-4 py-[30px] text-[#ffffff73] recenctly-traded">
+              
+              <div class="flex items-center justify-center gap-3 w-52 active pb-[15px] mobile-xl:w-40 cursor-pointer"  id="traded-cosmetics">
+                <img src="images/cosmetics.svg" alt="cosmetics" class="tablet:w-5 mobile-xl:w-4">
+                <span class="text-xl font-semibold capitalize tablet:text-lg mobile-xl:text-base">Quadro técnico</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-8 pb-8 traded-heroes">
+              
+              
+            </div>
+            <div class="flex-wrap active flex gap-8 pb-8 traded-cosmetics">
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/juliano.jpeg" alt="quadro-tecnico">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">DIRETOR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Doutor em Aprendizado de máquina</span>
+                       
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                      
+                       
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Currículo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  
+			  <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/fabiano.jpeg" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">Vice Diretor</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Doutor em Aprendizado de máquina</span>
+                       
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                      
+                       
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Currículo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  
+			   <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/wellington.jpeg" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">Otimização e Inovação</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Doutor em Aprendizado de máquina</span>
+                       
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                      
+                       
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Currículo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  
+			   <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/douglas.jpeg" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">Gestor de Dados</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Doutor em Aprendizado de máquina</span>
+                       
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                      
+                       
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Currículo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			    <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/hernesto.jpeg" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">Gerente de Contratos</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Doutor em Aprendizado de máquina</span>
+                       
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                      
+                       
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Currículo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+			  <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/diego-instituto.jpeg" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">Coordenador Sistemas</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Doutor em Aprendizado de máquina</span>
+                       
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                      
+                       
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Currículo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+		  
+		  
+		  
+         
+             
+           
+          </div>
+
+</section>
+
+  <section class="about2" id="cases">
+     
+	  <div class="flex flex-col items-center pb-[180px] laptop-l:pb-[135px] laptop:pb-[54px] tablet:pb-14">
+        <div class="w-[1440px] px-[51px] mobile-xl:px-6 laptop-xl:w-[1024px] laptop:w-[780px] tablet:w-[500px] mobile-xl:w-full">
+         
+		  
+		  
+		   <div class="flex flex-col recenctly">
+           <h2 class="text-[28px] font-semibold tablet:text-2xl mobile-xl:text-xl">CASES DE SUCESSO</h2>
+	 
+    
+
+    <div class="row">
+
+       <div class="image">
+            <img src="images/footer/trafego-carros-gif.gif" alt="">
+        </div>
+
+        <div class="content">
+            
+            <p>Desenvolvimento ágil de projetos garante entrega de valor para as empresas
+
+“Não é apenas entregar um projeto, é entregá-lo com valor ao cliente de forma colaborativa, rápida e eficaz. 
+Conheça o case da Mobit.” Com a transformação digital que vivemos nos últimos anos, é notório que as empresas estejam buscando
+, cada vez mais, metodologias ágeis como solução para eliminar gaps nos projetos e potencializar as entregas, […] </p>
+            <a href="#" class="btn">Leia Mais</a>
+        </div>
+		
+		 
+
+    </div>
+	
+	 </div>
+
+    </div>
+	 </div>
+
+    
+
+</section>
+
+
+ <section class="about2" id="about2">
+     
+	  <div class="flex flex-col items-center pb-[180px] laptop-l:pb-[135px] laptop:pb-[54px] tablet:pb-14">
+        <div class="w-[1440px] px-[51px] mobile-xl:px-6 laptop-xl:w-[1024px] laptop:w-[780px] tablet:w-[500px] mobile-xl:w-full">
+         
+		  
+		  
+		   <div class="flex flex-col recenctly">
+           
+	 
+    
+
+    <div class="row">
+
+       <div class="image">
+            <img src="images/footer/chat-gpt-bot.gif" alt="">
+        </div>
+
+        <div class="content">
+            
+            <p>
+
+Como um modelo de linguagem de IA, o ChatGPT é projetado para analisar e responder a textos em linguagem natural. Embora ele não tenha a capacidade de exibir arquivos como PDFs diretamente, existem algumas maneiras de compartilhar um PDF com o ChatGPT para obter insights e informações com base em seu conteúdo.</p>
+            <a href="#" class="btn">Leia Mais</a>
+        </div>
+		
+		 
+
+    </div>
+	
+	 </div>
+
+    </div>
+	 </div>
+
+    
+
+</section>
+
+ 
+
+
+
+  <section class="about" id="quadro">
+            <div class="flex items-center w-full py-14 mobile-xl:py-6">
+            <div class="border border-[#ffffff1a] rounded-md statistics pt-8 w-full">
+              <div class="w-full border-b border-[#ffffff1a] px-9 mobile-xl:px-5">
+                <ul class="flex gap-6 text-[#c9c5db] font-medium tablet:text-sm mobile-xl:text-xs mobile-xl:justify-between mobile-xl:flex-wrap mobile-l:grid mobile-l:grid-cols-2">
+                  <li class="pb-[10px] min-w-[64px] flex justify-center cursor-pointer active" data-values="122,1214074,487">Projetos</li>
+                  <li class="pb-[10px] min-w-[64px] flex justify-center cursor-pointer" data-values="738,8898863,3305">Linhas de código</li>
+                  <li class="pb-[10px] min-w-[64px] flex justify-center cursor-pointer" data-values="3628,39663642,15030">Contratos</li>
+                
+                </ul>
+              </div>
+              <div class="grid justify-between w-full grid-cols-3 p-9 mobile-xl:p-5 laptop:grid-cols-2 tablet:grid-cols-1 tablet:grid-rows-3 laptop:gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="images/total.svg" alt="total" class="tablet:w-16 mobile-xl:w-14">
+                  <div class="flex flex-col">
+                    <span class="text-[#c4b7fc] font-bold tablet:text-sm mobile-xl:text-xs">TOTAL PROJETOS</span>
+                    <span class="text-3xl font-bold tablet:text-2xl mobile-xl:text-xl" id="total-listed">0</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <img src="images/transaction.svg" alt="transaction" class="tablet:w-16 mobile-xl:w-14">
+                  <div class="flex flex-col">
+                    <span class="text-[#c4b7fc] font-bold tablet:text-sm mobile-xl:text-xs">LINHAS DE CODIGO</span>
+                    <span class="text-3xl font-bold tablet:text-2xl mobile-xl:text-xl" id="transaction-volume">0</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <img src="images/item.svg" alt="item" class="tablet:w-16 mobile-xl:w-14">
+                  <div class="flex flex-col">
+                    <span class="text-[#c4b7fc] font-bold tablet:text-sm mobile-xl:text-xs">DADOS ANALISADOS</span>
+                    <span class="text-3xl font-bold tablet:text-2xl mobile-xl:text-xl" id="items-traded">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+</section>
+
+
+	   </div>
+      </div>
+    </div>
+    <!-- Main End -->
+
+    <!-- Footer -->
+    <footer class="grid grid-cols-3 grid-rows-2 justify-items-center bg-[#030320] pt-12 pb-4 gap-y-11 laptop-l:grid-rows-3 laptop-l:grid-cols-2 laptop-l:items-center tablet:gap-y-7 tablet:grid-rows-2 tablet:grid-cols-1 mobile-xl:grid-rows-1">
+      <div class="flex flex-col items-center justify-center gap-2">
+        <img src="images/footer/footer-logo.png" alt="logo" class="h-[122px] laptop-xl:h-[90px] laptop:h-[100px] tablet:h-[100px]">
+      
+      </div>
+      <div class="flex justify-between w-full tablet:col-start-1 tablet:col-end-3">
+        <ul class="flex flex-col gap-5 w-full font-thin text-[#bfbcd2] tablet:items-center mobile-xl:gap-3">
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Home</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Instituto de dados</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Blog</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">FAQ</a></li>
+        </ul>
+        <ul class="flex flex-col gap-5 w-full font-thin text-[#bfbcd2] tablet:items-center mobile-xl:gap-3">
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Instruções</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Contato</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Suporte</a></li>
+        </ul>
+        <ul class="flex flex-col gap-5 w-full font-thin text-[#bfbcd2] tablet:items-center mobile-xl:gap-3">
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Sobre o Instituto</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Politica</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Estatuto</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Auditoria</a></li>
+        </ul>
+      </div>
+      
+     
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+	
+	<script>
+	
+	 
+      
+    </script>
+	
+    <!-- CountUp JS -->
+    <script src="js/countUp.umd.js"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+	<script src="js/script-navegacao2.js"></script>
+
+  </body>
+</html>
