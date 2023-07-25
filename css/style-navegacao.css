@@ -39,6 +39,80 @@
 
 
 
+ /* For iPhone SE, 5, 5S, 5C, 4, 4S */
+  @media screen and (max-width: 320px) {
+    #mobilenav {
+      width: 100%;
+    }
+    .pt-12 {
+      /* Adjust top padding for better spacing */
+      padding-top: 8px;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .translate-x-full {
+      /* Hide the mobile navigation off the screen initially */
+      transform: translateX(100%);
+    }
+  }
+
+  /* For iPhone 6, 7, 8, SE (2nd generation) */
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    /* Adjust styles as needed for this screen size */
+    /* Example:
+    #mobilenav {
+      width: 100%;
+    }
+    .pt-12 {
+      padding-top: 12px;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .translate-x-full {
+      transform: translateX(100%);
+    }
+    */
+  }
+
+  /* For iPhone 6 Plus, 7 Plus, 8 Plus */
+  @media screen and (min-width: 376px) and (max-width: 414px) {
+    /* Adjust styles as needed for this screen size */
+  }
+
+  /* For iPhone X, XS, 11 Pro */
+  @media screen and (min-width: 375px) and (max-width: 812px) {
+    /* Adjust styles as needed for this screen size */
+  }
+
+  /* For iPhone XR, 11 */
+  @media screen and (min-width: 414px) and (max-width: 896px) {
+    /* Adjust styles as needed for this screen size */
+  }
+
+  /* For iPhone XS Max, 11 Pro Max */
+  @media screen and (min-width: 414px) and (max-width: 896px) and (orientation: landscape) {
+    /* Adjust styles as needed for this screen size in landscape orientation */
+  }
+
+  /* For iPhone 12, 12 Pro */
+  @media screen and (min-width: 390px) and (max-width: 844px) {
+    /* Adjust styles as needed for this screen size */
+  }
+
+  /* For iPhone 12 mini */
+  @media screen and (min-width: 360px) and (max-width: 780px) {
+    /* Adjust styles as needed for this screen size */
+  }
+
+  /* For iPhone 12 Pro Max */
+  @media screen and (min-width: 428px) and (max-width: 926px) {
+    /* Adjust styles as needed for this screen size */
+  }
+
+
+
 
 .about .row{
     display: flex;
