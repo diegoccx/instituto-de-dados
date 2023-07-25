@@ -5,44 +5,37 @@
 /* For mobile screens */
 /* styles.css (or your CSS file) */
 
-/* For mobile screens */
-@media screen and (max-width: 767px) {
-  #mobilenav {
-    width: 100%; /* Set the width to occupy the full screen width on mobile */
-    max-width: 100%; /* Ensure the navigation does not overflow on small screens */
-    right: -100%; /* Hide the navigation off the screen initially */
-    transition: right 0.3s ease; /* Add a transition effect for smooth animation */
-  }
+/* styles.css (or your CSS file) */
 
-  #mobilenav.show {
-    right: 0; /* Show the navigation when the "show" class is added */
-  }
-
-  /* Hide the scrollbar on mobile */
-  #mobilenav.overflow-auto {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  #mobilenav.overflow-auto::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Adjust styles for the More menu items */
-  #more {
-    padding-top: 5px; /* Add padding on top for better spacing */
-  }
-  #more li {
-    width: 100%; /* Set the width to occupy the full container width */
-  }
-
-  /* Show and hide the More menu */
-  #menu.show #more {
-    display: flex;
-    flex-direction: column;
+/* For tablet and smaller screens */
+@media screen and (max-width: 1023px) {
+  .about2 {
+    padding-bottom: 50px; /* Adjust the bottom padding for better spacing on smaller screens */
   }
 }
 
-
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+  .about2 {
+    padding-bottom: 20px; /* Further adjust the bottom padding for mobile */
+  }
+  .w-\[1440px\], .laptop-xl\:w-\[1024px\], .laptop:w-\[780px\], .tablet:w-\[500px\], .mobile-xl\:w-full {
+    width: 100%; /* Set the width to occupy the full screen width on mobile */
+    max-width: 100%; /* Ensure the content does not overflow on small screens */
+    padding-left: 10px; /* Adjust the left padding for better spacing on smaller screens */
+    padding-right: 10px; /* Adjust the right padding for better spacing on smaller screens */
+  }
+  .recenctly {
+    /* If 'recenctly' is a class, update its styling here for mobile */
+  }
+  .row {
+    flex-direction: column; /* Stack the content vertically on mobile */
+  }
+  .image,
+  .content {
+    text-align: center; /* Center the content on mobile */
+  }
+}
 
 
 
