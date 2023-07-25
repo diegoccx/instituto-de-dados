@@ -1,34 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+/* styles.css (or your CSS file) */
 
+/* For mobile screens */
+/* styles.css (or your CSS file) */
 
+/* For mobile screens */
 @media screen and (max-width: 767px) {
-  .flex {
-    flex-direction: column; /* Stack flex items vertically on mobile */
-    align-items: center; /* Center items horizontally on mobile */
+  #mobilenav {
+    width: 100%; /* Set the width to occupy the full screen width on mobile */
+    max-width: 100%; /* Ensure the navigation does not overflow on small screens */
+    right: -100%; /* Hide the navigation off the screen initially */
+    transition: right 0.3s ease; /* Add a transition effect for smooth animation */
   }
-  .h-full {
-    /* Remove height to allow content to determine height */
-    height: auto;
+
+  #mobilenav.show {
+    right: 0; /* Show the navigation when the "show" class is added */
   }
-  .w-\[104px\] {
-    /* Set width to 100% for mobile */
-    width: 100%;
+
+  /* Hide the scrollbar on mobile */
+  #mobilenav.overflow-auto {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-  .laptop-l\:w\-\[80px\], .laptop-l\:w\-\[40px\] {
-    /* Remove laptop-specific width */
-    width: 100%;
+  #mobilenav.overflow-auto::-webkit-scrollbar {
+    display: none;
   }
-  .laptop-l\:text-xs, .laptop-l\:text-sm {
-    /* Reset laptop-specific font size */
-    font-size: inherit;
+
+  /* Adjust styles for the More menu items */
+  #more {
+    padding-top: 5px; /* Add padding on top for better spacing */
   }
-  .invisible {
-    /* Make dropdown menu visible on mobile */
-    visibility: visible;
-    opacity: 1;
+  #more li {
+    width: 100%; /* Set the width to occupy the full container width */
+  }
+
+  /* Show and hide the More menu */
+  #menu.show #more {
+    display: flex;
+    flex-direction: column;
   }
 }
+
+
+
 
 
 
