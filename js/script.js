@@ -62,6 +62,15 @@ var mainSlider = new Swiper(".mainSlider", {
   },
 });
 
+
+// JavaScript to toggle the mobile menu
+const menuIcon = document.querySelector(".menu-icon");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+menuIcon.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
+
 // Statistics ve Recenctly Tabs Active
 const statistics = document.querySelectorAll(".statistics ul li");
 const recenctlyList = document.querySelectorAll(".recenctly .recenctly-list div");
